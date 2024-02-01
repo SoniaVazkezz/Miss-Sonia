@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./logo.jpg" alt="">
+        <ul>
+        <a href="">
+            <li>Home</li>
+        </a>
+        <a href="">
+            <li>Nosotros</li>
+        </a>
+        <a href="">
+            <li>Contacto</li>
+        </a>
+
+        </ul>
+
+    </div>
+    <!--carusel de imagenes-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/carusel/preescolar.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/carusel/primaria.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/carusel/secundaria.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!--contenedor general para poner todas las noticias-->
+    <div class="contenedor">
+        <!--primera noticia-->
+        <div class="noticias">
+            <h1>Preescolar</h1>
+            <div id="contenido">
+                <!--este contenedor es el que quiero ocultar/mostrar-->
+                <p>Es la base del desarrollo de la inteligencia, personalidad y comportamiento social de las niñas y niños. Cursar este nivel favorece el proceso de comunicación, el razonamiento matemático, la comprensión del mundo natural y social, así como el pensamiento crítico.
+                </p>
+            </div>
+            <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido" >+</button>
+        </div>
+
+        <!--segunda noticia-->
+        <div class="noticias">
+            <h1>Primaria</h1>
+            <div id="contenido2">
+                <!--este contenedor es el que quiero ocultar/mostrar-->
+                <p>Es el segundo nivel de la Educación Básica, donde los niños y niñas aprenden a leer y escribir para comunicarse, desarrollan sus habilidades matemáticas, aprenden a convivir, a explorar el mundo, comprenderlo y desarrollarse como personas.
+                </p>
+            </div>
+            <button onclick='muestra_oculta("contenido2")' class="btn btn-primary" form="contenido2">+</button>
+        </div>
+
+        <!--tercera noticia-->
+        <div class="noticias">
+            <h1>Secundaria</h1>
+            <div id="contenido3">
+                <!--este contenedor es el que quiero ocultar/mostrar-->
+                <p>Es el último nivel de la Educación Básica, en él los estudiantes consolidan el perfil de egreso para contribuir con el desarrollo de las competencias para la vida que desde la Educación Preescolar han trabajado.
+                </p>
+            </div>
+            <button onclick='muestra_oculta("contenido3")' class="btn btn-primary" form="contenido">+</button>
+        </div>
+
+    </div>
+    <!--footer es el pie de pagina-->
+    <footer>
+        <h3>copyright 2023 Miss Sonia </h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
